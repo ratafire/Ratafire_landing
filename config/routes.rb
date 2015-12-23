@@ -3,10 +3,7 @@ Rails.application.routes.draw do
 	#Homepage
 	root 'home#index'
 
-	constraints Constraints::CustomSubdomain do
-	  get '(*path)' => 'application#blog', :constraints => {subdomain: 'blog'}
-	end
-
-	get '/blog' => redirect("https://ratafire.com/blog/")
+	get '(*path)' => 'application#blog', :constraints => {subdomain: 'blog'}
+	get '/blog' => redirect("https://www.ratafire.com/blog/")
 
 end
