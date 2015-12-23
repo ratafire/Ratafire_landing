@@ -13,6 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrapValidator.min
 //= require_directory .
 //= require_directory ./template_foundry
