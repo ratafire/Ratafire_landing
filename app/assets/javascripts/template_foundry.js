@@ -13,5 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require_directory .
-//= require_directory ./template_foundry
+//= require_tree .
