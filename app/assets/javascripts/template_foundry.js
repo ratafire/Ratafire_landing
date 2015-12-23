@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require jquery.vide.min
+//= require_directory .
 //= require_directory ./template_foundry
