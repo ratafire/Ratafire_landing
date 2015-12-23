@@ -3,6 +3,6 @@
 require ::File.expand_path('../config/environment',  __FILE__)
 
 use Rack::ReverseProxy do
-  reverse_proxy /^\/blog(\/.*)$/, 'https://ratafire.flywheelsites.com$1', :username => 'flywheel', :password => 'skynettie', :timeout => 500, :preserve_host => true
+  reverse_proxy /^\/blog(\/.*)$/, 'http://ratafire.flywheelsites.com$1', :username => 'flywheel', :password => 'skynettie', :timeout => 500, :preserve_host => true
 end
 run Rails.application
