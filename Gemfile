@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rack-reverse-proxy', :require => 'rack/reverse_proxy'
+gem 'rack-host-redirect'
 
 #Background Video Embed
 #gem 'vider', github: 'ratafire/vider'
