@@ -2,7 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.middleware.use Rack::HostRedirect, {
-    'ibaraki-3539.herokuapp.com' => 'ratafire.com'
+    'www.ratafire.com' => {host: 'ratafire.com', path: '/', query: nil}
   }
 
   # Code is not reloaded between requests.
