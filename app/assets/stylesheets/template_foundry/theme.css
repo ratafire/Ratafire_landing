@@ -740,9 +740,6 @@ footer.bg-dark li,
   letter-spacing: 1px;
   color: #47b475;
   text-align: center;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   margin-right: 8px;
   margin-bottom: 24px;
 }
@@ -859,7 +856,7 @@ footer.bg-dark li,
   border-color: #47b475;
 }
 .image-bg .btn-filled:hover {
-  border-color: #fff;
+  /*border-color: #fff;*/
 }
 .btn-rounded {
   border-radius: 5px;
