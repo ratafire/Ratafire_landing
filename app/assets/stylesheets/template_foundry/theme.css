@@ -3874,6 +3874,22 @@ audio:-webkit-full-screen {
 iframe {
   border: none;
 }
+#video-background {
+/*  making the video fullscreen  */
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: 1;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+  padding: 0;
+  width: initial;  
+}
+
 .player {
   position: absolute;
   width: 100%;
@@ -3882,6 +3898,7 @@ iframe {
   left: 0;
   z-index: 1;
 }
+
 @media all and (max-width: 767px) {
   .player {
     display: none;

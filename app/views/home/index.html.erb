@@ -3,11 +3,27 @@
 <!--~~~~~~~~~~~~~~~~~ Page Content ~~~~~~~~~~~~~~~~~-->
 <!-- Section 1 -->
 <!-- Home Page Video -->
-<section class="cover image-bg fullscreen overlay overlay-texture pt-xs-120">
+<section id="video-block"class="cover vid-bg fullscreen overlay pt-xs-120">
+
+    <!-- Adjust video height and width -->
+    <script>
+        var w = $(window).width(), h = $(window).height()  
+        $('#video-block video').css({height: ''+h+'',width: ''+w+''})
+        $(window).resize(function(){
+        var w = $(window).width(), h = $(window).height()  
+        $('#video-block video').css({height: ''+h+'',width: ''+w+''})
+        })  
+    </script>
    
-    <!-- Use Vider Gem to Embed Video as Background-->
-    <div class="player" data-vide-bg="mp4: //s3.amazonaws.com/Ratafire_production_videos/park_space.mp4, webm: //s3.amazonaws.com/Ratafire_production_videos/park_space.webm poster: https://ratafire.com/assets/homepage/park_pool.jpg" data-vide-options="posterType: jpg, position: 0% 0%"></div> 
-    <div class="container v-align-transform">
+    <!-- Embed Video as Background-->
+    <div style="width:initial;" class="overlay-texture">
+        <video autoplay loop id="video-background" muted poster="/assets/homepage/park_pool.jpg">
+            <source src="//s3.amazonaws.com/Ratafire_production_videos/park_space.mp4" type="video/mp4">
+            <source src="//s3.amazonaws.com/Ratafire_production_videos/park_space.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div class="container v-align-transform" >
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" style="z-index:200;">
                 <h1>Your Fan Donations
@@ -24,8 +40,6 @@
         <!--end of row-->
     </div>
     <!--end of container-->
-    <!-- YouTube Video as Background -->
-
 </section>
 <!-- Section 2 -->
 <!-- Why you must get Ratafire 3.0? -->
