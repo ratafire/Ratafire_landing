@@ -740,6 +740,9 @@ footer.bg-dark li,
   letter-spacing: 1px;
   color: #47b475;
   text-align: center;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
   margin-right: 8px;
   margin-bottom: 24px;
 }
@@ -748,7 +751,6 @@ footer.bg-dark li,
   margin-right: 0;
 }
 .btn:hover {
-  background: #47b475;
   color: #fff;
 }
 .btn-icon {
@@ -793,17 +795,14 @@ footer.bg-dark li,
   border: 0;
 }
 
-.btn-join-us:hover {
-  background-image: url(/assets/button/btn-join-us.png) !important;
-  background-position: 0 50px;
-  border:0;
-  background-color:transparent !important; 
+.btn-join-us:hover {  
+  background-position: center;
+  border:0; 
 }
 
 .btn-join-us:active {
-  background-image: url(/assets/button/btn-join-us.png) !important;
   background-position: bottom;
-  background-color:transparent !important; 
+
   border:0;
 }
 
@@ -851,18 +850,19 @@ footer.bg-dark li,
   color:#ffffff;
 }
 
+
 .image-bg .btn.btn-filled,
 .image-bg .btn-filled:visited {
   border-color: #47b475;
 }
 .image-bg .btn-filled:hover {
-  /*border-color: #fff;*/
+  border-color: #fff;
 }
 .btn-rounded {
   border-radius: 5px;
 }
 body.btn-rounded .btn {
-  border-radius: 5px !important;
+  border-radius: 25px !important;
 }
 .bg-light .btn {
   border-color: #222;
@@ -890,7 +890,8 @@ body.btn-rounded .btn {
 }
 
 /* btn-blue */
-.btn-blue:visited{
+.btn-blue:visited,
+.btn:visited:hover{
   color:#fff;
 }
 .btn-white:visited:hover{
@@ -1675,7 +1676,6 @@ nav.nav-centered.outOfSight .logo {
 .tooltip-inner {
   border-radius: 0;
   padding: 9px 24px 12px 24px;
-  background-color: #ffffff !important;
 }
 /*!---------- 9. ALERTS ----------*/
 .alert {
@@ -3886,7 +3886,6 @@ iframe {
   padding: 0;
   width: initial;  
 }
-
 .player {
   position: absolute;
   width: 100%;
@@ -3895,7 +3894,6 @@ iframe {
   left: 0;
   z-index: 1;
 }
-
 @media all and (max-width: 767px) {
   .player {
     display: none;

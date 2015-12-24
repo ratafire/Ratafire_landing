@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 	root 'home#index'
 
 	get '(*path)' => 'application#blog', :constraints => {subdomain: 'blog'}
-	get '/blog' => redirect("https://www.ratafire.com/blog/")
+	get '/blog' => redirect("https://ratafire.com/blog/")
 
 end
