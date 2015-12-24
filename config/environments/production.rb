@@ -2,7 +2,9 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.middleware.insert_before(Rack::Runtime, Rack::Rewrite) do
-    r301 /.*/,  Proc.new {|path, rack_env| "https://#{rack_env['SERVER_NAME']}#{path}" },     :if => Proc.new {|rack_env| ! (rack_env['SERVER_NAME'] =~ /www\./i)}
+      r301 %r{.*}, 'https://ratafire.com$&', :if => Proc.new {|rack_env|
+  rack_env['SERVER_NAME'] != 'ratafire.com'
+}
   end
 
   # Code is not reloaded between requests.
