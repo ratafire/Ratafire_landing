@@ -25,8 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rack-reverse-proxy', :require => 'rack/reverse_proxy'
 
-gem 'rack-rewrite'
-
 #Background Video Embed
 #gem 'vider', github: 'ratafire/vider'
 # Use ActiveModel has_secure_password
