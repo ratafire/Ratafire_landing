@@ -436,7 +436,7 @@ a:hover {
 }
 a {
   font-weight: 600;
-  color: #47b475;
+  color: #36b8df;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -459,7 +459,7 @@ a {
   opacity: 1;
 }
 a:hover {
-  color: #398f5d;
+  color: #2dddfc;
   text-decoration: none;
 }
 .label {
